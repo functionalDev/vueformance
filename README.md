@@ -5,15 +5,15 @@
 - Nuxt
 - Codesplitting
 - Service Worker
- - Cache Offline Mode
-- - (Push) Notification
--- Background Sync
--- Pre-Fetching resources
+- Cache Offline Mode
+  - (Push) Notification
+  - Background Sync
+  - Pre-Fetching resources
 - GraphQL
--- Apollo client/server
+  - Apollo client/server
 - Observables?
--- ReactiveX?
--- Firebase like?
+  - ReactiveX?
+  - Firebase like?
 - DB ?
 - Tracking
 - Extract stuff into Webworkers
@@ -29,9 +29,9 @@
 - Web-audio API
 - Vibration API
 - Device X API
--- Orientation
--- Motion
--- Ratation
+  - Orientation
+  - Motion
+  - Ratation
 - Payments API
 - WebBluetooth API
 - Web USB API
