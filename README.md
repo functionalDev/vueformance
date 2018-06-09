@@ -5,8 +5,8 @@
 - Nuxt
 - Codesplitting
 - Service Worker
--- Cache Offline Mode
--- (Push) Notification
+ - Cache Offline Mode
+- - (Push) Notification
 -- Background Sync
 -- Pre-Fetching resources
 - GraphQL
