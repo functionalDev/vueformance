@@ -46,5 +46,5 @@
 - 
 
 ## Design
-Material Design
-Parallaxing
+- Material Design
+- Parallaxing
