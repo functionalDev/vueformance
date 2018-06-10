@@ -5,11 +5,15 @@
   "author": "Paul <pstolz2s@gmail.com>",
   "private": true,
   "dependencies": {
-    "nuxt": "latest",
-    "@nuxtjs/pwa": "latest"
+    "@nuxtjs/pwa": "latest",
+    "nuxt": "latest"
   },
   "scripts": {
+    "prod": "npm run build && npm run copy-assets && npm run copy-statics && npm run serve",
     "dev": "nuxt",
+    "copy-assets": "cpx \"../functions/nuxt/dist/**/*.*\" ../public",
+    "copy-statics": "cpx \"static/**.*\" ../public",
+    "serve": "firebase serve --only functions,hosting -p 3005",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
@@ -18,6 +22,11 @@
   },
   "devDependencies": {
     "babel-eslint": "^7.1.1",
+    "babel-plugin-module-resolver": "^2.7.1",
+    "babel-plugin-transform-runtime": "^6.21.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "cpx": "^1.5.0",
     "eslint": "^3.15.0",
     "eslint-config-standard": "^6.2.1",
     "eslint-loader": "^1.6.1",

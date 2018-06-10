@@ -13,31 +13,52 @@ $ npm install # Or yarn install
 $ npm run dev
 
 # build for production and launch server
-$ npm run build
-$ npm start
+# service worker is enabled in prod
+# SSR is enabled in prod
+$ npm run prod
 
-# generate static project
-$ npm run generate
 ```
 
 ## TODOs
+
+### frontend
 - Vue
+``` bash
+# Install CLI globally
+$ npm install vue -g
+```
 - Vuex
+``` bash
+# Included in nuxtjs
+```
 - Nuxt
+``` bash
+$ vue init nuxt/pwa <projectName>
+```
 - Codesplitting
 - Service Worker
-- Cache Offline Mode
-  - (Push) Notification
-  - Background Sync
-  - Pre-Fetching resources
-- GraphQL
-  - Apollo client/server
-- Observables?
-  - ReactiveX?
-  - Firebase like?
-- DB ?
+   - Cache Offline Mode
+      - static files
+      ``` js
+      # already included in nuxt/pwa
+      ```
+      - backend data
+      ``` js
+      # TODO configure workbox
+      ```
+   - (Push) Notification
+   ``` js
+   # already included in nuxt/pwa (TODO  activate)
+   # module: OneSignal
+   ```
+   - Background Sync
+   - Pre-Fetching resources
 - Tracking
 - Extract stuff into Webworkers
+- Observables?
+   - ReactiveX?
+   - Firebase like?
+- Apollo client
 
 ##Browser APIs / Tools for APIs
 - Speech API
