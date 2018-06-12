@@ -24,7 +24,6 @@ export default {
   },
   created() {
     this.$store.dispatch('getWidgets');
-    console.log('asdfe', this.$store.state.widgets);
     this.widgets = this.$store.state.widgets;
   },
   components: {

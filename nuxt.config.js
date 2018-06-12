@@ -1,4 +1,7 @@
 module.exports = {
+  router: {
+    linkActiveClass: 'active-link'
+  },
   /*
   ** Build configuration
   */
@@ -36,7 +39,8 @@ module.exports = {
   head: {
     link: [
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' }
-    ]},
+    ]
+  },
   /*
   ** Customize the progress-bar color
   */
@@ -52,5 +56,17 @@ module.exports = {
   */
   modules: [
     '@nuxtjs/pwa'
-  ]
+  ],
+  workbox: {
+    runtimeCaching: [
+      {
+        // Should be a regex string. Compiles into new RegExp('https://my-cdn.com/.*')
+        urlPattern: 'https://fonts.googleapis.com/icon.*',
+        // Defaults to `networkFirst` if omitted
+        handler: 'cacheFirst',
+        // Defaults to `GET` if omitted
+        method: 'GET'
+      }
+    ]
+  }
 };

@@ -27,7 +27,7 @@ const dummyWidgets = [
     name: 'SmartHome',
     icon: 'home',
     order: 5,
-    type: 'smarthome'
+    type: 'service'
   },
   {
     name: 'Pipeline',
@@ -45,7 +45,7 @@ const dummyWidgets = [
     name: 'Tasks',
     icon: 'done_all',
     order: 2,
-    type: 'List',
+    type: 'list',
     badgeIcon: 'notifications'
   },
   {
@@ -59,13 +59,13 @@ const dummyWidgets = [
     name: 'Dashboard',
     icon: 'dashboard',
     order: 1,
-    type: 'Dashboard'
+    type: 'dashboard'
   },
   {
     name: 'FoodPlan',
     icon: 'local_dining',
     order: 8,
-    type: 'List'
+    type: 'list'
   }
 ];
 

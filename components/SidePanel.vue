@@ -32,6 +32,18 @@ export default {
     text-transform: uppercase;
     box-shadow: 3px 1px 10px 0px rgba(0, 0, 0, .6);
   }
+  #sidepanel.minimized {
+      position: initial;
+      /* top: 0; */
+      /* bottom: 0; */
+      /* right: 100vw; */
+      width: 50px;
+      /* left: 0; */
+      overflow: hidden;
+  }
+  #sidepanel.minimized #panelBody{
+    margin: 0 10px;
+  }
   @media only screen and (max-width: 800px) {
     #sidepanel {
       /* position: absolute; */

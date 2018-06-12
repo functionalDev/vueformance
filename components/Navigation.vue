@@ -1,8 +1,8 @@
 <template>
   <div>
     <ul>
-      <li :class="{ navItem: true, active: activeItem === item.name }" v-for="item in navItems">
-        <a :to="`/${item.type}/`">
+      <li v-for="item in navItems">
+        <nuxt-link :to="`/${item.type}/`">
           <i class="material-icons">{{item.icon}}</i>
           <div class="text">
             <span>{{item.name}}</span>
@@ -13,17 +13,17 @@
               {{item.badge || item.badgeIcon}}
             </badge>
           </div>
-        </a>
+        </nuxt-link>
       </li>
     </ul>
     <ul class="bottom">
-      <li :class="{ navItem: true, active: activeItem === 'settings'}">
-        <a :to="`/settings/`">
+      <li>
+        <nuxt-link :to="`/settings/`">
           <i class="material-icons">settings</i>
           <span>
             Settings
           </span>
-        </a>
+        </nuxt-link>
       </li>
     </ul>
   </div>
@@ -35,9 +35,7 @@ export default {
   name: '',
   props: ['navItems'],
   data() {
-    return {
-      activeItem: 'Tasks',
-    };
+    return {};
   },
   components: {
     Badge,
@@ -76,7 +74,7 @@ a {
   background: rgba(255, 255, 255, 0.1);
   opacity: 1;
 }
-#panelBody li.active {
+#panelBody .active-link {
   color: rgb(0, 155, 25);
   font-weight: 600;
 }
